@@ -67,6 +67,8 @@ class Solution:
 
 #### 思路
 
+* 终止条件：当两个链表都为空时，表示链表已经完成合并。
+* 调用递归：先判断 l1 与 l2 头结点哪个更好，然后较小结点的 `next` 指针指向 **其余结点的合并结果**。
 * 参考：[一看就会，一写就废？详解递归](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/yi-kan-jiu-hui-yi-xie-jiu-fei-xiang-jie-di-gui-by-/)
 
 ```python
@@ -86,34 +88,28 @@ class Solution:
 
 #### 复杂度分析
 
-* 时间复杂度：O(n)
-* 空间复杂度：O(n)
 
 
-## Go
 
-### 方法 1：使用哈希表 + range
+如何计算递归的时间复杂度和空间复杂度呢？
 
-#### 思路
+时间复杂度可以这样计算：
 
-* 与上述思路一样，只是将它翻译成对应的 Go 代码
+> 给出一个递归算法，其时间复杂度 {\mathcal{O}(T)}O(T) 通常是递归调用的数量（记作 {R}R） 和计算的时间复杂度的乘积（表示为 {\mathcal{O}(s)}O(s)）的乘积：O(T)=R∗O(s)
 
 
-```go
-func twoSum(nums []int, target int) []int {
-    d := make(map[int]int)
 
-    for i, n := range nums {
-        if _, ok := d[target - n]; ok {
-            return []int {d[target - n], i}
-        } else {
-            d[n] = i
-        }
-    }
-    return nil
-}
-```
+m, n 分别为 l1 与 l2 的节点个数。
 
-#### 其它
+* 时间复杂度：O(m+n)
 
-* 一个月前学写的 Go 代码，忘得差不多了
+m，n 为 l1 和 l2 的元素个数。递归函数每次去掉一个元素，直到两个链表都为空，因此需要调用 `R=O(m + n)` 次。而在递归函数中我们只进行了 `next` 指针的赋值操作，复杂度为 `O(1)`，故递归的总时间复杂度为 `O(T)=R∗O(1)=O(m+n)`  。
+
+* 空间复杂度：O(m+n)
+
+对于递归调用 `self.mergeTwoLists()`，当它遇到终止条件准备回溯时，已经递归调用了 `m+n` 次，使用了 `m+n` 个栈帧，故最后的空间复杂度为 `O(m+n)`。
+
+作者：z1m
+链接：https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/yi-kan-jiu-hui-yi-xie-jiu-fei-xiang-jie-di-gui-by-/
+来源：力扣（LeetCode）
+
