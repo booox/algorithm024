@@ -81,3 +81,34 @@ return res
     * 看一下，它的 **最近重复子问题** 是怎样的？
         * 在不涉及人工智能的一般算法中，最终都要归结到：`if...else...` , `for while` 与 `recursion` 
         * 既然如此，在处理很多题时，都要去思考它的 **重复子问题**
+
+
+### 15. 三数之和
+
+* [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
+* [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
+
+
+#### 思路
+
+* 要彻底理解三数之和，先来看两数之和
+    * 题目：要在给定 nums 中，找满足 `a + b = target` 的整数对
+    * 解法：
+        * 使用暴力：两重循环，总的时间复杂度为 O(n^2)
+        * 使用哈希表，使第 2 次遍历的时间复杂度变成 O(1)
+* 三数之和
+    * 解法 1：
+        * 题目：要在给定 nums 中，找满足 `a + b + c = 0` 的三元组
+        * 思路：
+            * 所求可以转化为求 `a + b = -c` ，而这里的 `-c` 可以是 `nums` 中任一值
+
+```java
+int max = 0;
+for (int i = 0; i < a.length - 1; ++i) {
+    for (int j = i + 1; j < a.length; ++j) {
+        int area = (j - i) * Math.min(a[i], a[j]);
+        max = Math.max(max, area);
+    }
+    return max;
+}
+```

@@ -114,3 +114,30 @@ class Solution:
 * 空间复杂度：O(n)
 
 
+### 方法 4：使用递归 + O(1) 空间
+
+#### 思路
+
+* 在方法 2 中，它使用了一个数组来缓存，其实还可以在此基础上进行优化
+* 只需要定义 3 个变量，分别存储当前、前一阶、前二阶共有多少种走法即可
+
+
+```python
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if n <= 2: return n
+
+        f1, f2, f3 = 1, 2, 3
+        for i in range(3, n + 1):
+            f3 = f1 + f2
+            f1 = f2
+            f2 = f3
+
+        return f3
+```
+
+
+#### 复杂度分析
+
+* 时间复杂度：O(n)
+* 空间复杂度：O(1)

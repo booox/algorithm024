@@ -68,7 +68,7 @@ class Solution:
 #### 思路
 
 * 终止条件：当两个链表都为空时，表示链表已经完成合并。
-* 调用递归：先判断 l1 与 l2 头结点哪个更好，然后较小结点的 `next` 指针指向 **其余结点的合并结果**。
+* 调用递归：先判断 l1 与 l2 头结点哪个更小，然后较小结点的 `next` 指针指向 **其余结点的合并结果**。
 * 参考：[一看就会，一写就废？详解递归](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/yi-kan-jiu-hui-yi-xie-jiu-fei-xiang-jie-di-gui-by-/)
 
 ```python
