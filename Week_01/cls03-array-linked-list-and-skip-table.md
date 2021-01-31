@@ -15,7 +15,10 @@
 
 * [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
 
-#### 嵌套循环的写法
+#### 暴力解法
+
+* 双层循环，将当前的面积与前面的最大面积比较，取较大者
+
 
 ```java
 int max = 0;
@@ -35,6 +38,9 @@ for i in range(len(a) - 1):
     for j in range(i + 1, len(a)):
         // do something
 ```
+
+
+
 
 #### 向中间收敛（左右夹逼）方法
 
