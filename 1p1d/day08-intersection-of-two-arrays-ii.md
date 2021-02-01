@@ -154,6 +154,9 @@ class Solution:
 
 #### 复杂度分析
 
-* 时间复杂度：O(n)
-    * 排序： O(nlogn) ；遍历：O(n)
+> m, n 分别为 nums1, nums2 的长度
+
+* 时间复杂度：O(mlogm + nlogn)
+    * 排序：O(mlogm + nlogn); 遍历：O(m + n)
+    * 总的时间复杂度：O(mlogm + nlogn) 
 * 空间复杂度：O(1)
