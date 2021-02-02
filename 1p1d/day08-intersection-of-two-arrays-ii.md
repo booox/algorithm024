@@ -87,7 +87,8 @@ class Solution:
 * 先判断长短，处理短的；排序
 * 将较短数组元素及出现的次数放入哈希表
 * 对较长数组进行遍历，判断数值是否在哈希表中
-    * 如果在，则将次数减 1；当次数为 0，则将值从哈希表中删除
+    * 如果在，则将次数减 1；
+    * ~~当次数为 0，则将值从哈希表中删除~~
 
 ```python
 
@@ -109,8 +110,8 @@ class Solution:
             if d1.get(n, 0) > 0:
                 res.append(n)
                 d1[n] -= 1
-                if d1[n] == 0:
-                    d1.pop(n)
+                # if d1[n] == 0:    # 多此一举了
+                #     d1.pop(n)
         return res
 ```
 
@@ -159,4 +160,4 @@ class Solution:
 * 时间复杂度：O(mlogm + nlogn)
     * 排序：O(mlogm + nlogn); 遍历：O(m + n)
     * 总的时间复杂度：O(mlogm + nlogn) 
-* 空间复杂度：O(1)
+* 空间复杂度：O( min(m + n) )

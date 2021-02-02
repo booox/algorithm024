@@ -20,6 +20,8 @@
 
 ### 困难：
 * [] [接雨水]() ([leetcode](https://leetcode.com/problems/trapping-rain-water/))（亚马逊、字节跳动、高盛集团、Facebook 在半年内面试常考）
+* [] [柱状图中最大的矩形](code/84-largest-rectangle-in-histogram.md) ([leetcode](https://leetcode-cn.com/problems/largest-rectangle-in-histogram))（亚马逊、微软、字节跳动在半年内面试中考过）
+* [] [滑动窗口最大值](code/239-sliding-window-maximum.md) ([leetcode](https://leetcode-cn.com/problems/sliding-window-maximum))（亚马逊在半年内面试常考）
 
 ### 下周预习
 预习题目：

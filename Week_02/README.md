@@ -2,17 +2,17 @@
 
 ### 简单：
 
-* [] [写一个关于 HashMap 的小总结。]() 
+* [x] [写一个关于 HashMap 的小总结。](week02-notes.md) 
     * 说明：对于不熟悉 Java 语言的同学，此项作业可选做。
-* [] [有效的字母异位词]() ([leetcode]())（亚马逊、Facebook、谷歌在半年内面试中考过）
-* [] [两数之和]() ([leetcode]())（近半年内，亚马逊考查此题达到 216 次、字节跳动 147 次、谷歌 104 次，Facebook、苹果、微软、腾讯也在近半年内面试常考)
+* [x] [有效的字母异位词](code/242-valid-anagram.md) ([leetcode](https://leetcode-cn.com/problems/valid-anagram/description/))（亚马逊、Facebook、谷歌在半年内面试中考过）
+* [x] [两数之和](code/01-two-sum.md) ([leetcode](https://leetcode-cn.com/problems/two-sum/description/))（近半年内，亚马逊考查此题达到 216 次、字节跳动 147 次、谷歌 104 次，Facebook、苹果、微软、腾讯也在近半年内面试常考)
 * [] [N 叉树的前序遍历]() ([leetcode]()) （亚马逊在半年内面试中考过）
 * [] [HeapSort ：自学 https://www.geeksforgeeks.org/heap-sort/]() 
 
 
 ### 中等：
 
-* [] [字母异位词分组]() ([leetcode]()) （亚马逊在半年内面试中常考）
+* [x] [字母异位词分组](code/49-group-anagrams.md) ([leetcode](https://leetcode-cn.com/problems/group-anagrams/)) （亚马逊在半年内面试中常考）
 * [] [二叉树的中序遍历]() ([leetcode]()) （亚马逊、字节跳动、微软在半年内面试中考过）
 * [] [二叉树的前序遍历]() ([leetcode]()) （字节跳动、谷歌、腾讯在半年内面试中考过）
 * [] [N 叉树的层序遍历]() ([leetcode]()) （亚马逊在半年内面试中考过）
