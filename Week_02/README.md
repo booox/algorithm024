@@ -21,7 +21,7 @@
 * [] [N 叉树的后序遍历]() ([leetcode](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)) （亚马逊在半年内面试中考过）
 * [] [N 叉树的层序遍历]() ([leetcode](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)) （亚马逊在半年内面试中考过）
 * [] [丑数]() ([leetcode]()) （字节跳动在半年内面试中考过）
-* [] [前 K 个高频元素]() ([leetcode]()) （亚马逊在半年内面试中常考）
+* [x] [前 K 个高频元素](code/347-top-k-frequent-elements.md) ([leetcode](https://leetcode-cn.com/problems/top-k-frequent-elements/)) （亚马逊在半年内面试中常考）
 
 
 
@@ -32,6 +32,7 @@
 * [] [Pow(x, n)]() ([leetcode]()) 
 * [] [子集]() ([leetcode]()) 
 * [] [N 皇后]() ([leetcode]()) 
+* [] [滑动窗口最大值](code/239-sliding-window-maximum.md) ([leetcode](https://leetcode-cn.com/problems/sliding-window-maximum))（亚马逊在半年内面试常考）
 
 
 * [] [接雨水]() ([leetcode](https://leetcode.com/problems/trapping-rain-water/))（亚马逊、字节跳动、高盛集团、Facebook 在半年内面试常考）
@@ -40,5 +41,5 @@
 预习题目：
 * [] [有效的字母异位词]() ([leetcode](https://leetcode-cn.com/problems/valid-anagram/description/))
 * [] [二叉树的中序遍历]() ([leetcode](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/))
-* [] [最小的 k 个数]() ([leetcode](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/))
+* [x] [最小的 k 个数]() ([leetcode](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/))
 
