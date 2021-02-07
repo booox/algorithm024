@@ -27,19 +27,35 @@
 
 ### 困难：
 
-* [] [爬楼梯]() ([leetcode]()) 
-* [] [括号生成]() ([leetcode]()) 
-* [] [Pow(x, n)]() ([leetcode]()) 
-* [] [子集]() ([leetcode]()) 
-* [] [N 皇后]() ([leetcode]()) 
+* [x] [爬楼梯](../1p1d/day00-climbing-stairs.md) ([leetcode](https://leetcode-cn.com/problems/climbing-stairs/)) 
+* [x] [括号生成](code/22-generate-parentheses.md) ([leetcode](https://leetcode-cn.com/problems/generate-parentheses/)) 
+* [x] [Pow(x, n)](code/50-powx-n.md) ([leetcode](https://leetcode-cn.com/problems/powx-n/)) 
+* [] [子集]() ([leetcode](https://leetcode-cn.com/problems/subsets/)) 
+* [] [N 皇后]() ([leetcode](https://leetcode-cn.com/problems/n-queens/)) 
 * [] [滑动窗口最大值](code/239-sliding-window-maximum.md) ([leetcode](https://leetcode-cn.com/problems/sliding-window-maximum))（亚马逊在半年内面试常考）
 
 
 * [] [接雨水]() ([leetcode](https://leetcode.com/problems/trapping-rain-water/))（亚马逊、字节跳动、高盛集团、Facebook 在半年内面试常考）
 
-### 下周预习
-预习题目：
-* [] [有效的字母异位词]() ([leetcode](https://leetcode-cn.com/problems/valid-anagram/description/))
-* [] [二叉树的中序遍历]() ([leetcode](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/))
-* [x] [最小的 k 个数]() ([leetcode](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/))
 
+### 训练场练习（选做）
+
+哈希相关：
+
+* [] [找雪花]() ([geektime](https://u.geekbang.org/playground/exam/823?question=7677))
+
+树相关：
+
+* [] [安装路灯]() ([geektime](https://u.geekbang.org/playground/exam/823?question=7758))
+
+二叉搜索树相关：
+
+* [] [二叉搜索树的后序遍历序列]() ([geektime](https://u.geekbang.org/playground/exam/823?question=8126))
+
+堆相关：
+* [] [最火视频榜单]() ([geektime](https://u.geekbang.org/playground/exam/823?question=7678))
+
+
+图相关：
+
+* [] [手游上线]() ([geektime](https://u.geekbang.org/playground/exam/823?question=8287))
