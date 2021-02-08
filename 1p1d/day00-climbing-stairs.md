@@ -8,7 +8,7 @@
 * 方法 1：直接用递归 
 * 方法 2：用递归 + 记忆化搜索
 * 方法 3：使用动态归化（DP）
-
+* 方法 4：使用递归 + O(1) 空间
 
 ```
 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
@@ -44,7 +44,7 @@
 
 ## Python
 
-### 方法 1：直接用递归
+### 方法 1：直接用递归 (超时)
 
 ```python
 class Solution:
@@ -84,6 +84,20 @@ class Solution:
         return worker(n)
 ```
 
+```python
+# 2021-2-8 update: 更简洁一些
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        # 2. use recursive + memo
+        def worker(n):
+            if n not in memo:
+                memo[n] = worker(n - 1) + worker(n - 2)
+            return memo[n]
+
+        memo = {1: 1, 2: 2}
+        return worker(n) 
+```
+
 
 #### 复杂度分析
 
@@ -106,6 +120,22 @@ class Solution:
 
         return memo[n]
 ```
+
+
+```python
+# 2021-2-8 update: 更简洁一些 
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        # 3. use dp
+        memo = {1: 1, 2: 2}
+        for i in range(3, n + 1):
+            memo[i] = memo[i - 1] + memo[i - 2]
+
+        return memo[n]
+```
+
+
+
 
 
 #### 复杂度分析
