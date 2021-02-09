@@ -164,8 +164,8 @@ class Solution:
 
 我们使用「栈」来进行迭代，过程如下：
 
-* 它先将根节点 cur 和所有的左孩子入栈并加入结果中，直至 cur 为空，用一个 while 循环实现：
-* 然后，每弹出一个栈顶元素 tmp，就到达它的右孩子，再将这个节点当作 cur 重新按上面的步骤来一遍，直至栈为空。这里又需要一个 while 循环。
+* 它先将根节点 cur 和所有的左孩子入栈并加入结果中，直至 curr 为空，用一个 while 循环实现：
+* 然后，每弹出一个栈顶元素，就到达它的右孩子，再将这个节点当作 curr 重新按上面的步骤来一遍，直至栈为空。这里又需要一个 while 循环。
 
 
 **参考代码**
@@ -181,8 +181,8 @@ class Solution:
                 res.append(curr.val)
                 stack.append(curr)
                 curr = curr.left
-            tmp = stack.pop()  # 每弹出一个元素，就到达了右子树
-            curr = tmp.right
+            curr = stack.pop()  # 每弹出一个元素，就到达了右子树
+            curr = curr.right
 
         return res
 ```
@@ -193,7 +193,7 @@ class Solution:
 
 #### 模板解法
 
-和前序遍历的代码完全相同，只是在出栈的时候才将节点 tmp 的值加入结果集中。
+和前序遍历的代码完全相同，只是在出栈的时候才将节点 的值加入结果集中。
 
 **参考代码**
 
@@ -204,12 +204,12 @@ class Solution:
 
         curr, stack, res = root, [], []
         while curr or stack:
-            while curr:  # curr 入栈，并到达最左端叶子节点
+            while curr:  # curr 入栈， 直到到达最左端叶子节点
                 stack.append(curr)
                 curr = curr.left
-            tmp = stack.pop()  # 每弹出一个元素，就到达了右子树
-            res.append(tmp.val)
-            curr = tmp.right
+            curr = stack.pop()  # 每弹出一个元素，就到达了右子树
+            res.append(curr.val)
+            curr = curr.right
 
         return res
 ```
@@ -236,8 +236,8 @@ class Solution:
                 res.append(curr.val)
                 stack.append(curr)
                 curr = curr.right
-            tmp = stack.pop()  # 每弹出一个元素，就到达了右子树
-            curr = tmp.left
+            curr = stack.pop()  # 每弹出一个元素，就到达了右子树
+            curr = curr.left
 
         return res[::-1]  # 反向输出
 ```
