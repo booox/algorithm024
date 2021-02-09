@@ -26,6 +26,8 @@
 
 ## 分治、回溯的实现和特性
 
+* [分治代码模板](code/divide-and-conquer-template.md)
+
 ### 实战题目
 
 * [x] [Pow(x, n)](code/50-powx-n.md) ([leetcode](https://leetcode-cn.com/problems/powx-n/))（Facebook 在半年内面试常考） 
