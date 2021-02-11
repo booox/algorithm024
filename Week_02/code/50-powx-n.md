@@ -71,8 +71,88 @@ class Solution:
 * 空间复杂度：O()
 
 
+### 方法 3: 暴力解法
 
-### 方法 3: 使用二分法
+#### 思路
+
+* 要求 x 的 n 次幂，也就是让 x 乘上 n 次
+* 可以通过简单的循环来实现，但在 LC 上通过不了，超时了。
+
+```python
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        # bruce force - (timeout)
+        if n == 0: return 1
+        if n == 1: return x
+
+        if n < 0:
+            n = -n
+            x = 1 / x
+
+        res = 1
+        for _ in range(n):
+            res *= x
+
+        return res
+```
+
+#### 复杂度分析
+
+* 时间复杂度：O(n)
+    * 要乘以 n 次
+* 空间复杂度：O(1)
+
+
+### 方法 4: 使用分治法
+
+#### 思路
+
+* 举例说明：x 的 10 次方，可以把 x 乘以 10 次；也可以用 x^5 乘以 x ^ 5 来得到
+* 所以可以采用「分治」的方法，分治怎么解呢？
+    * 就是把问题转成「子问题」，写程序时就是「递归」
+    * 递归模板有四步：
+        * 终止条件
+        * 处理，而在分治里就是「拆分原有问题」
+        * 下探到下一级，在这里就是「调用函数去做子问题」，再加上「合并子问题」
+        * 清理状态
+* 原有问题: `pow(x, n)`
+* 子问题：`pow(x, n // 2)`
+* 合并时：要区分奇偶性
+
+```python
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        # 分治
+        def quickPow(x, n):
+            # terminator
+            if n == 0:
+                return 1.0
+
+            # drill down (split)
+            half = quickPow(x, n // 2)
+
+            # process (merge)
+            # 下面 4 句也可简写为:
+            # return half * half if n % 2 == 0 else half * half * x
+            if n % 2 == 0:
+                return half * half
+            else:
+                return half * half * x
+
+        if n < 0:
+            x, n = 1 / x, -n
+
+        return quickPow(x, n)
+```
+
+#### 复杂度分析
+
+* 时间复杂度：O()
+* 空间复杂度：O()
+
+
+
+### 方法 5: 另一种分治法
 
 #### 思路
 

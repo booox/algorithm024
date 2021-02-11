@@ -9,7 +9,7 @@
 
 * [x] [爬楼梯](../1p1d/day00-climbing-stairs.md) ([leetcode](https://leetcode-cn.com/problems/climbing-stairs/))（阿里巴巴、腾讯、字节跳动在半年内面试常考）
 * [x] [括号生成](../Week_02/code/22-generate-parentheses.md) ([leetcode](https://leetcode-cn.com/problems/generate-parentheses/)) (字节跳动在半年内面试中考过)
-* [] [翻转二叉树]() ([leetcode](https://leetcode-cn.com/problems/invert-binary-tree/description/) (谷歌、字节跳动、Facebook 在半年内面试中考过))
+* [x] [翻转二叉树]() ([leetcode](https://leetcode-cn.com/problems/invert-binary-tree/description/) (谷歌、字节跳动、Facebook 在半年内面试中考过))
 * [x] [验证二叉搜索树](code/98-validate-binary-search-tree.md) ([leetcode](https://leetcode-cn.com/problems/validate-binary-search-tree)（亚马逊、微软、Facebook 在半年内面试中考过）)
 * [] [二叉树的最大深度]() ([leetcode](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)（亚马逊、微软、字节跳动在半年内面试中考过）)
 * [] [二叉树的最小深度]() ([leetcode](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)（Facebook、字节跳动、谷歌在半年内面试中考过）)
@@ -30,7 +30,7 @@
 
 ### 实战题目
 
-* [x] [Pow(x, n)](code/50-powx-n.md) ([leetcode](https://leetcode-cn.com/problems/powx-n/))（Facebook 在半年内面试常考） 
+* [x] [Pow(x, n)](../Week_02/code/50-powx-n.md) ([leetcode](https://leetcode-cn.com/problems/powx-n/))（Facebook 在半年内面试常考） 
 * [] [子集]() ([leetcode](https://leetcode-cn.com/problems/subsets/))（Facebook、字节跳动、亚马逊在半年内面试中考过） 
 * [] [N 皇后]() ([leetcode](https://leetcode-cn.com/problems/n-queens/))（字节跳动、苹果、谷歌在半年内面试中考过） 
 * [] [多数元素]() ([leetcode]()) （亚马逊、字节跳动、Facebook 在半年内面试中考过）
