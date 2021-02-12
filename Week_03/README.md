@@ -31,10 +31,10 @@
 ### 实战题目
 
 * [x] [Pow(x, n)](../Week_02/code/50-powx-n.md) ([leetcode](https://leetcode-cn.com/problems/powx-n/))（Facebook 在半年内面试常考） 
-* [] [子集]() ([leetcode](https://leetcode-cn.com/problems/subsets/))（Facebook、字节跳动、亚马逊在半年内面试中考过） 
+* [x] [子集](code/78-subsets.md) ([leetcode](https://leetcode-cn.com/problems/subsets/))（Facebook、字节跳动、亚马逊在半年内面试中考过） 
 * [] [N 皇后]() ([leetcode](https://leetcode-cn.com/problems/n-queens/))（字节跳动、苹果、谷歌在半年内面试中考过） 
 * [] [多数元素]() ([leetcode]()) （亚马逊、字节跳动、Facebook 在半年内面试中考过）
-* [] [电话号码的字母组合]() ([leetcode]())（亚马逊在半年内面试常考）
+* [x] [电话号码的字母组合](code/17-letter-combinations-of-a-phone-number.md) ([leetcode](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/))（亚马逊在半年内面试常考）
 
 ### 参考链接
 

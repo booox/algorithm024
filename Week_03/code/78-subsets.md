@@ -32,13 +32,14 @@ nums 中的所有元素 互不相同
 * 对于组合、排列这类问题，要首先画出递归结构树，有利于思考
 * 因为是组合问题，只需按顺序读字符，就不需要设置 used 数组； 
 * `nums` 中每个元素都有两种状态：选，或不选* 
-* 参考：[回溯 + 位运算技巧（Java、Python）- @liweiwei](https://leetcode-cn.com/problems/subsets/solution/hui-su-python-dai-ma-by-liweiwei1419/)
+
 
 ### 方法 1: 使用递归，深度优先搜索
 
 #### 思路
 
 * 执行一次深度优先遍历，一条路走到底，走不通的时候，返回回来，继续执行，一直这样下去，直到回到起点。
+
 
 ```python
 class Solution:
@@ -78,6 +79,7 @@ class Solution:
 #### 思路
 
 * 回溯算法，回溯过程中记录节点
+* 参考：[回溯 + 位运算技巧（Java、Python）- @liweiwei](https://leetcode-cn.com/problems/subsets/solution/hui-su-python-dai-ma-by-liweiwei1419/)
 
 ```python
 class Solution:
