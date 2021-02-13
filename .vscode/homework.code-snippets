@@ -1,0 +1,20 @@
+{
+	// Place your algorithm024 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Homework text": {
+		"scope": "md,markdown",
+		"prefix": "hw",
+		"body": [
+"#学号: G20210343210093"
+"#姓名: zhixinliu"
+"#小组: 5 组"
+"#作业&总结链接: https://github.com/booox/algorithm024/tree/main/Week_0$1"
+		],
+		"description": "some text"
+	}
+}

@@ -207,9 +207,9 @@ class Solution:
             while curr:  # curr 入栈， 直到到达最左端叶子节点
                 stack.append(curr)
                 curr = curr.left
-            curr = stack.pop()  # 每弹出一个元素，就到达了右子树
-            res.append(curr.val)
-            curr = curr.right
+            curr = stack.pop()  # 弹出一个元素，就是左边最小的
+            res.append(curr.val) # 将值添加到结果集中
+            curr = curr.right    # 指向右子树
 
         return res
 ```
