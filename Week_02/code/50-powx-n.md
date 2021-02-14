@@ -77,6 +77,8 @@ class Solution:
 
 * 要求 x 的 n 次幂，也就是让 x 乘上 n 次
 * 可以通过简单的循环来实现，但在 LC 上通过不了，超时了。
+* 想想也是，如果要计算 x 的 1024 那就要循环 1024 次
+* 而用后面的「分治」办法，则只需要 10 次即可。
 
 ```python
 class Solution:
@@ -145,10 +147,29 @@ class Solution:
         return quickPow(x, n)
 ```
 
+**或直接调用原函数**
+
+```python
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        # 使用分治
+        if n == 0: return 1.0
+        if n == 1: return x
+
+        if n < 0:
+            x, n = 1 / x, -n
+
+        half = self.myPow(x, n // 2)
+
+        return half * half if n % 2 == 0 else half * half * x
+```
+
+
+
 #### 复杂度分析
 
-* 时间复杂度：O()
-* 空间复杂度：O()
+* 时间复杂度：O(logn)
+* 空间复杂度：O(1)
 
 
 
