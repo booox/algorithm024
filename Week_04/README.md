@@ -6,6 +6,7 @@
 
 * [DFS 代码模板（递归写法、非递归写法）](https://shimo.im/docs/M89WofhfyM4wJTjB/)
 * [BFS 代码模板](https://shimo.im/docs/LkC6gcOKq4oa2biq/)
+* [已知前序、中序，写出后序；或已知后序、中序，推前序]()
 
 ### 实战题目
 
