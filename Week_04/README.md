@@ -9,8 +9,8 @@
 
 ### 实战题目
 
-* [] [二叉树的层序遍历](code/144-binary-tree-traversal.md) ([leetcode](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)) （亚马逊、字节跳动、微软在半年内面试中考过
-* [] [N 叉树的层序遍历]() ([leetcode](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)) （亚马逊在半年内面试中考过）
+* [x] [二叉树的层序遍历](code/144-binary-tree-traversal.md) ([leetcode](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)) （亚马逊、字节跳动、微软在半年内面试中考过
+* [x] [N 叉树的层序遍历](code/429-n-ary-tree-level-order-traversal.md) ([leetcode](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)) （亚马逊在半年内面试中考过）
 * [] [最小基因变化]() ([leetcode](https://leetcode-cn.com/problems/minimum-genetic-mutation/#/description))
 * [x] [括号生成](../Week_02/code/22-generate-parentheses.md) ([leetcode](https://leetcode-cn.com/problems/generate-parentheses/)) (字节跳动在半年内面试中考过)
 * [] [在每个树行中找最大值]() ([leetcode](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/#/description))（微软、亚马逊、Facebook 在半年内面试中考过）
