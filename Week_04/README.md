@@ -21,7 +21,9 @@
 
 * [] [单词接龙]() ([leetcode](https://leetcode-cn.com/problems/word-ladder/description/))（亚马逊在半年内面试常考）
 * [] [单词接龙 II ]() ([leetcode](https://leetcode-cn.com/problems/word-ladder-ii/description/))（微软、亚马逊、Facebook 在半年内面试中考过）
-* [x] [岛屿数量]() ([leetcode](https://leetcode-cn.com/problems/number-of-islands/))（近半年内，亚马逊在面试中考查此题达到 350 次）
+* [x] [200. 岛屿数量](code/200-number-of-islands.md) ([leetcode](https://leetcode-cn.com/problems/number-of-islands/))（近半年内，亚马逊在面试中考查此题达到 350 次）
+* [x] [695. 岛屿的最大面积](code/659-max-area-of-island.md) ([leetcode](https://leetcode-cn.com/problems/max-area-of-island/))
+* [x] [1254. 统计封闭岛屿的数目](code/659-max-area-of-island.md) ([leetcode](https://leetcode-cn.com/problems/number-of-closed-islands/))
 * [] [扫雷游戏]() ([leetcode](https://leetcode-cn.com/problems/minesweeper/description/))（亚马逊、Facebook 在半年内面试中考过）
 
 
