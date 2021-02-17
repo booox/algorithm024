@@ -23,7 +23,7 @@
 * [] [单词接龙 II ]() ([leetcode](https://leetcode-cn.com/problems/word-ladder-ii/description/))（微软、亚马逊、Facebook 在半年内面试中考过）
 * [x] [200. 岛屿数量](code/200-number-of-islands.md) ([leetcode](https://leetcode-cn.com/problems/number-of-islands/))（近半年内，亚马逊在面试中考查此题达到 350 次）
 * [x] [695. 岛屿的最大面积](code/659-max-area-of-island.md) ([leetcode](https://leetcode-cn.com/problems/max-area-of-island/))
-* [x] [1254. 统计封闭岛屿的数目](code/659-max-area-of-island.md) ([leetcode](https://leetcode-cn.com/problems/number-of-closed-islands/))
+* [x] [1254. 统计封闭岛屿的数目](code/1254-number-of-closed-islands.md) ([leetcode](https://leetcode-cn.com/problems/number-of-closed-islands/))
 * [] [扫雷游戏]() ([leetcode](https://leetcode-cn.com/problems/minesweeper/description/))（亚马逊、Facebook 在半年内面试中考过）
 
 
@@ -38,9 +38,9 @@
 
 ### 课后作业
 
-* [] [柠檬水找零]() ([leetcode](https://leetcode-cn.com/problems/lemonade-change/description/))（亚马逊在半年内面试中考过）
+* [x] [柠檬水找零](code/860-lemonade-change.md) ([leetcode](https://leetcode-cn.com/problems/lemonade-change))（亚马逊在半年内面试中考过）
 * [] [买卖股票的最佳时机 II ]() ([leetcode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/))（亚马逊、字节跳动、微软在半年内面试中考过）
-* [] [分发饼干]() ([leetcode](https://leetcode-cn.com/problems/assign-cookies/description/))（亚马逊在半年内面试中考过）
+* [x] [分发饼干](code/455-assign-cookies.md) ([leetcode](https://leetcode-cn.com/problems/assign-cookies/description/))（亚马逊在半年内面试中考过）
 * [] [模拟行走机器人]() ([leetcode](https://leetcode-cn.com/problems/walking-robot-simulation/description/))
 * [] [跳跃游戏 ]() ([leetcode](https://leetcode-cn.com/problems/jump-game/))（亚马逊、华为、Facebook 在半年内面试中考过）
 * [] [跳跃游戏 II ]() ([leetcode](https://leetcode-cn.com/problems/jump-game-ii/))（亚马逊、华为、字节跳动在半年内面试中考过）
