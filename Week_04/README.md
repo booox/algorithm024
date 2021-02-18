@@ -50,7 +50,7 @@
 
 ### 参考链接
 
-* [二分查找代码模板](https://shimo.im/docs/qLXNQjllC0Agk7Bi/)
+* [二分查找代码模板](code/template-binary-search.md)
 * [Fast InvSqrt() 扩展阅读](https://www.beyond3d.com/content/articles/8/)
 
 ### 实战题目
