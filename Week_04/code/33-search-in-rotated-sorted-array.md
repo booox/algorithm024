@@ -92,24 +92,18 @@ class Solution:
             if nums[mid] == target:
                 return mid
             # 确定 mid 在左段，还是右段
-            ## mid 在左段 （较大的数 + 可能较小的数）
+            ## low --> mid 为递增
             if nums[mid] >= nums[low]:  
-                ## 比较 mid 与 target 位置
-                ### low -- target -- mid
+                ### target 在 mid 左边
                 if nums[low] <= target < nums[mid]:
-                # if target < nums[mid]:
                     high = mid - 1
-                ### mid -- target -- high
                 else:
                     low = mid + 1
-            ## mid 在右段 (可能较大的数 + 较小的数 )
+            ## mid --> high 为递增
             else:  
-                ## 比较 mid 与 target 位置
-                ### mid -- target -- high
+                ## target 在 mid 的右边
                 if nums[mid] < target <= nums[high]:
-                # if nums[mid] < target:
                     low = mid + 1
-                ### low -- target -- mid
                 else:
                     high = mid - 1
 

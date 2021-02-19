@@ -64,6 +64,25 @@ class Solution:
                     nodes.append(level[i].right)
 ```
 
+**更简洁的方法**
+
+```python
+class Solution:
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        if not root:
+            return []
+        if not root.left and not root.right:
+            return [[root.val]]
+
+        # 2. use bfs
+        while level:
+            res.append([node.val for node in level])
+            level = [kid for node in level for kid in (node.left, node.right) if kid]
+        return res
+```
+
+
+
 ### 复杂度分析
 
 * 时间复杂度：O(n)

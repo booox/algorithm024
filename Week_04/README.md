@@ -4,13 +4,13 @@
 
 **参考链接**
 
-* [DFS 代码模板（递归写法、非递归写法）](https://shimo.im/docs/M89WofhfyM4wJTjB/)
-* [BFS 代码模板](https://shimo.im/docs/LkC6gcOKq4oa2biq/)
+* [DFS 代码模板（递归写法、非递归写法）](code/template-dfs.md)
+* [BFS 代码模板](code/template-bfs.md)
 * [已知前序、中序，写出后序；或已知后序、中序，推前序](code/binary-tree-traversal-.md)
 
 ### 实战题目
 
-* [x] [二叉树的层序遍历](code/144-binary-tree-traversal.md) ([leetcode](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)) （亚马逊、字节跳动、微软在半年内面试中考过
+* [x] [二叉树的层序遍历](../Week_02/code/144-binary-tree-traversal.md) ([leetcode](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)) （亚马逊、字节跳动、微软在半年内面试中考过
 * [x] [N 叉树的层序遍历](code/429-n-ary-tree-level-order-traversal.md) ([leetcode](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)) （亚马逊在半年内面试中考过）
 * [] [最小基因变化]() ([leetcode](https://leetcode-cn.com/problems/minimum-genetic-mutation/#/description))
 * [x] [括号生成](../Week_02/code/22-generate-parentheses.md) ([leetcode](https://leetcode-cn.com/problems/generate-parentheses/)) (字节跳动在半年内面试中考过)
@@ -60,9 +60,11 @@
 
 ### 课后作业
 
-* [] [搜索旋转排序数组]() ([leetcode](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)（Facebook、字节跳动、亚马逊在半年内面试常考）)
+* [x] [33. 搜索旋转排序数组](code/33-search-in-rotated-sorted-array.md) ([leetcode](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)（Facebook、字节跳动、亚马逊在半年内面试常考）)
+* [x] [81. 搜索旋转排序数组 II](code/81-search-in-rotated-sorted-array-ii.md) ([leetcode](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)（Facebook、字节跳动、亚马逊在半年内面试常考）)
+* [x] [153. 寻找旋转排序数组中的最小值](code/153-find-minimum-in-rotated-sorted-array.md) ([leetcode](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)（亚马逊、微软、字节跳动在半年内面试中考过）)
+* [x] [154. 寻找旋转排序数组中的最小值 II](code/154-find-minimum-in-rotated-sorted-array-ii.md) ([leetcode](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)（亚马逊、微软、字节跳动在半年内面试中考过）)
 * [] [搜索二维矩阵]() ([leetcode](https://leetcode-cn.com/problems/search-a-2d-matrix/)（亚马逊、微软、Facebook 在半年内面试中考过）)
-* [] [寻找旋转排序数组中的最小值]() ([leetcode](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)（亚马逊、微软、字节跳动在半年内面试中考过）)
 * [] [使用二分查找，寻找一个半有序数组 [4, 5, 6, 7, 0, 1, 2] 中间无序的地方]() ([leetcode]())
 
 
