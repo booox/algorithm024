@@ -55,8 +55,8 @@
 
 ### 实战题目
 
-* [] [x 的平方根]() ([leetcode](https://leetcode-cn.com/problems/sqrtx/))（字节跳动、微软、亚马逊在半年内面试中考过）
-* [] [有效的完全平方数]() ([leetcode](https://leetcode-cn.com/problems/valid-perfect-square/))（亚马逊在半年内面试中考过）
+* [x] [x 的平方根](code/69-sqrtx.md) ([leetcode](https://leetcode-cn.com/problems/sqrtx/))（字节跳动、微软、亚马逊在半年内面试中考过）
+* [x] [有效的完全平方数](code/367-valid-perfect-square.md) ([leetcode](https://leetcode-cn.com/problems/valid-perfect-square/))（亚马逊在半年内面试中考过）
 
 ### 课后作业
 

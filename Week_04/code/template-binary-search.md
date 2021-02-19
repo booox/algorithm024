@@ -4,9 +4,14 @@
 
 ### Python
 
+* 循环退出条件： `low <= high` 
+* mid 的取值： 
+    * `mid = low+(high-low)/2` 
+    * 或使用位运算: `mid = low+((high-low)>>1)` 
+
 ```python
 low, high = 0, len(array) - 1
-while low < high:
+while low <= high:
     mid = (low + high) / 2
     if array[mid] == target:
         return some
