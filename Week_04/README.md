@@ -64,8 +64,8 @@
 * [x] [81. 搜索旋转排序数组 II](code/81-search-in-rotated-sorted-array-ii.md) ([leetcode](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)（Facebook、字节跳动、亚马逊在半年内面试常考）)
 * [x] [153. 寻找旋转排序数组中的最小值](code/153-find-minimum-in-rotated-sorted-array.md) ([leetcode](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)（亚马逊、微软、字节跳动在半年内面试中考过）)
 * [x] [154. 寻找旋转排序数组中的最小值 II](code/154-find-minimum-in-rotated-sorted-array-ii.md) ([leetcode](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)（亚马逊、微软、字节跳动在半年内面试中考过）)
-* [] [搜索二维矩阵]() ([leetcode](https://leetcode-cn.com/problems/search-a-2d-matrix/)（亚马逊、微软、Facebook 在半年内面试中考过）)
-* [] [使用二分查找，寻找一个半有序数组 [4, 5, 6, 7, 0, 1, 2] 中间无序的地方]() ([leetcode]())
+* [x] [搜索二维矩阵](code/74-search-a-2d-matrix.md) ([leetcode](https://leetcode-cn.com/problems/search-a-2d-matrix/)（亚马逊、微软、Facebook 在半年内面试中考过）)
+* [x] [使用二分查找，寻找一个半有序数组 `4, 5, 6, 7, 0, 1, 2` 中间第一个无序的地方](code/homework-find-first-non-ordered.md)
 
 
 
