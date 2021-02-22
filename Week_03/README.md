@@ -3,7 +3,7 @@
 
 ## 泛型递归、树的递归：
 
-* [递归模板](code/recursion-template.md)
+* [递归模板](code/template-recursion.md)
 
 ### 实战题目
 
@@ -20,13 +20,13 @@
 * [] [二叉树的最近公共祖先]() ([leetcode](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)（Facebook 在半年内面试常考）)
 * [] [从前序与中序遍历序列构造二叉树]() ([leetcode](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)（字节跳动、亚马逊、微软在半年内面试中考过）)
 * [x] [组合](code/77-combinations.md) ([leetcode](https://leetcode-cn.com/problems/combinations/)（微软、亚马逊、谷歌在半年内面试中考过）)
-* [x] [全排列]() ([leetcode](https://leetcode-cn.com/problems/permutations/)（字节跳动在半年内面试常考）)
-* [x] [全排列 II]() ([leetcode](https://leetcode-cn.com/problems/permutations-ii/) （亚马逊、字节跳动、Facebook 在半年内面试中考过）)
+* [x] [全排列](code/46-permutations.md) ([leetcode](https://leetcode-cn.com/problems/permutations/)（字节跳动在半年内面试常考）)
+* [x] [全排列 II](code/46-permutations.md) ([leetcode](https://leetcode-cn.com/problems/permutations-ii/) （亚马逊、字节跳动、Facebook 在半年内面试中考过）)
 
 
 ## 分治、回溯的实现和特性
 
-* [分治代码模板](code/divide-and-conquer-template.md)
+* [分治代码模板](code/template-divide-and-conquer.md)
 
 ### 实战题目
 

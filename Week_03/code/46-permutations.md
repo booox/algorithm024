@@ -21,14 +21,42 @@
 ]
 ```
 
-## 方法 : 
+## 方法 1: 使用递归，回溯算法 
 
 ### 思路
 
 * 
 
 ```python
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        # use recursion, dfs
+        # permutations use used
+        size = len(nums)
+        if size <= 1:
+            return [nums]
 
+        used, res = [False] * size, []
+        self.__dfs(nums, size, 0, used, [], res)
+        return res
+
+    def __dfs(self, nums, size, depth, used, path, res):
+        # terminator
+        if depth == size:
+            res.append(path[:])
+            return
+
+        # process
+        for i in range(size):
+            if not used[i]:
+                used[i] = True
+                path.append(nums[i])
+                # drill down
+                self.__dfs(nums, size, depth + 1, used, path, res)
+                used[i] = False
+                path.pop()
+
+        # revert states
 ```
 
 ### 复杂度分析

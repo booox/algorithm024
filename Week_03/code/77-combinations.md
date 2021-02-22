@@ -64,6 +64,42 @@ class Solution:
             path.pop()
 ```
 
+**稍微修改一下代码**
+
+```python
+class Solution:
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        # 看到组合想回溯
+        # use dfs
+        if k == 0:
+            return [[]]
+        if k > 0 and n < 1:
+            return []
+
+        nums = list(range(1, n + 1))
+        res = []
+        self.__dfs(nums, n, k, 0, [], res)
+        return res
+
+    def __dfs(self, nums, n, k, begin, path, res):
+        # terminator
+        if len(path) == k:
+            res.append(path[:])
+            return
+
+        # process
+        for i in range(begin, n):
+            path.append(nums[i])
+            self.__dfs(nums, n, k, i + 1, path, res)
+            path.pop()
+
+        # drill down
+
+        # revert states
+    
+
+```
+
 ### 复杂度分析
 
 * 时间复杂度：O()
