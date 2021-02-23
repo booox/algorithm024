@@ -8,8 +8,8 @@
 def divide_conquer(problem, param1, param2, ...): 
   # recursion terminator 
   if problem is None: 
-	print_result 
-	return 
+  	print_result 
+  	return 
 
   # prepare data 
   data = prepare_data(problem) 
