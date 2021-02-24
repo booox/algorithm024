@@ -61,6 +61,20 @@ class Solution:
 
 > 上述代码提交会超时，因为在递归过程中会出现太多的重复计算
 
+
+**补一个使用 lru_cache**
+
+```python
+class Solution:
+    @functools.lru_cache(None)
+    def climbStairs(self, n: int) -> int:
+        if n in {1, 2}:
+            return n
+
+        return self.climbStairs(n - 1) + self.climbStairs(n - 2)
+```
+
+
 #### 复杂度分析
 
 * 时间复杂度：O(n)  （？）

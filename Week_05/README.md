@@ -11,8 +11,8 @@
 
 ### 实战题目
 
-* [] [509. 斐波那契数]() ([leetcode](https://leetcode-cn.com/problems/fibonacci-number/))（Facebook、亚马逊、微软在半年内面试中考过）
-* [] [不同路径]() ([leetcode](https://leetcode-cn.com/problems/unique-paths/))（Facebook、亚马逊、微软在半年内面试中考过）
+* [x] [509. 斐波那契数](code/509-fibonacci-number.md) ([leetcode](https://leetcode-cn.com/problems/fibonacci-number/))（Facebook、亚马逊、微软在半年内面试中考过）
+* [x] [不同路径](code/62-unique-paths.md) ([leetcode](https://leetcode-cn.com/problems/unique-paths/))（Facebook、亚马逊、微软在半年内面试中考过）
 * [] [不同路径 II ]() ([leetcode](https://leetcode-cn.com/problems/unique-paths-ii/))（谷歌、美团、微软在半年内面试中考过）
 * [] [最长公共子序列]() ([leetcode](https://leetcode-cn.com/problems/longest-common-subsequence/))（字节跳动、谷歌、亚马逊在半年内面试中考过）
 * [] [MIT 动态规划课程最短路径算法-Bilibili](https://www.bilibili.com/video/av53233912?from=search&seid=2847395688604491997) 
@@ -21,7 +21,7 @@
 
 ### 最大子序列和
 
-* [] [爬楼梯]() ([leetcode](https://leetcode-cn.com/problems/climbing-stairs/description/)) （阿里巴巴、腾讯、字节跳动在半年内面试常考）
+* [x] [爬楼梯](../1p1d/day00-climbing-stairs.md) ([leetcode](https://leetcode-cn.com/problems/climbing-stairs/description/)) （阿里巴巴、腾讯、字节跳动在半年内面试常考）
 * [] [三角形最小路径和]() ([leetcode](https://leetcode-cn.com/problems/triangle/description/)) （亚马逊、苹果、字节跳动在半年内面试考过）
 * [] [最大子序和]() ([leetcode](https://leetcode-cn.com/problems/maximum-subarray/)) （亚马逊、字节跳动在半年内面试常考）
 * [] [乘积最大子数组]() ([leetcode](https://leetcode-cn.com/problems/maximum-product-subarray/description/)) （亚马逊、字节跳动、谷歌在半年内面试中考过）
