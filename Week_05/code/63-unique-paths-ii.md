@@ -53,9 +53,10 @@ class Solution:
         if obstacleGrid[0][0] == 1 or obstacleGrid[m - 1][n - 1] == 1:
             return 0
 
+
         # 初始值: 全部赋予 0 值
-        dp = [[0] * n] * m                 # 通不过 ？？？
-        dp = [[0] * n for _ in range(m)]   # 可以
+        # dp = [[0] * n] * m  # 这样为浅复制，不可以
+        dp = [[0] * n for _ in range(m)]
         dp[0][0] = 1 if not obstacleGrid[0][0] else 0
 
         for row in range(m):
@@ -82,6 +83,37 @@ dp = [[0] * n] * m
 dp = [[0] * n for _ in range(m)]
 ```
 
+原因找到了：
+
+* 使用 `[[0] * n] * m` 方式，生成的二维数组，是将 `[0] * n` 这个数组 **复制** 了 `m` 次
+    * 被称为 **浅复制** 
+* 而使用 `[[0] * n for _ in range(m)]` 方式，则是 **创建** 得到了全新的二维数组。
+
+具体看如下实验
+
+```python
+>>> a = [[0] * 3] * 3
+>>> a
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> a[0][1] = 1
+>>> a
+[[0, 1, 0], [0, 1, 0], [0, 1, 0]]   # 每个对应的值对被修改了
+
+>>> b = [[0] * 3 for _ in range(3)]
+>>> b
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> b[0][1] = 1
+>>> b
+[[0, 1, 0], [0, 0, 0], [0, 0, 0]]  # 只修改了 1 个位置
+
+>>> c = [[0 for _ in range(3)] for _ in range(3)]
+>>> c
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> c[0][1] = 1
+>>> c
+[[0, 1, 0], [0, 0, 0], [0, 0, 0]]  # 也是只修改了 1 个位置
+```
+
 
 ### 复杂度分析
 
@@ -89,14 +121,134 @@ dp = [[0] * n for _ in range(m)]
 * 空间复杂度：O()
 
 
-## 方法 2: 使用深度优先搜索
+## 方法 2: 使用递归深度优先搜索 + lru_cache
+
+### 思路
+
+* 参考 [Python DFS+DP explained solution](https://leetcode.com/problems/unique-paths-ii/discuss/527282/Python-DFS%2BDP-explained-solution)
+* 使用递归，从 `(0, 0)` 开始
+
+```python
+import functools
+
+class Solution:
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        if not obstacleGrid:  # 空数组
+            return 0
+        m, n = len(obstacleGrid), len(obstacleGrid[0])
+        # (0, 0) 或 (m - 1, n - 1) 为障碍
+        if obstacleGrid[0][0] or obstacleGrid[m - 1][n - 1]:
+            return 0
+        
+        @functools.lru_cache(None)
+        def dfs(row, col):
+            # terminator
+            if obstacleGrid[row][col]:  # 遇到障碍
+                return 0
+            if row == m - 1 and col == n - 1:  # 到达 end
+                return 1
+
+            count = 0
+            # process
+            # 向下
+            if row < m - 1:
+                # drill down
+                count += dfs(row + 1, col)
+            # 向右
+            if col < n - 1:
+                # drill down
+                count += dfs(row, col + 1)
+
+            return count
+            
+            # revert states
+
+        return dfs(0, 0)
+```
+
+### 复杂度分析
+
+* 时间复杂度：O()
+* 空间复杂度：O()
+
+
+## 方法 3: 使用递归深度优先搜索 + 缓存
 
 ### 思路
 
 * 
 
-```python
 
+**自底向上**
+
+```python
+class Solution:
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        if not obstacleGrid:
+            return 0
+
+        memo = {}
+        m, n = len(obstacleGrid), len(obstacleGrid[0])
+        return self.__dfs(obstacleGrid, m - 1, n - 1, memo)
+
+    
+    def __dfs(self, grid, row, col, memo):
+        # terminator
+        if (row, col) in memo:
+            return memo[(row, col)]
+        # 出界，或遇到障碍
+        elif row < 0 or col < 0 or grid[row][col]:
+            return 0
+        # 到达 start
+        elif row == 0 and col == 0:
+            return 1
+
+        # process
+        # drill down
+        # 向上，或向左
+        memo[(row, col)] = self.__dfs(grid, row - 1, col, memo) + self.__dfs(grid, row, col - 1, memo)
+
+        return memo[(row, col)]
+        # revert states
+```
+
+
+**自顶向下***
+
+```python
+class Solution:
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        if not obstacleGrid:
+            return 0
+        if obstacleGrid[0][0] or obstacleGrid[-1][-1]:
+            return 0
+        
+        memo = {}
+        return self.__dfs(obstacleGrid, 0, 0, memo)
+
+    def __dfs(self, grid, i, j, memo):
+        m, n = len(grid), len(grid[0])
+
+        # terminator
+        # 缓存
+        if (i, j) in memo:
+            return memo[(i, j)]
+        # 出界，或障碍
+        elif i > m - 1 or j > n - 1 or grid[i][j]:
+            return 0
+        # 到达起点
+        elif i == m - 1 and j == n - 1:
+            return 1
+
+        # process
+        # drill down
+        # 向右，向下
+        memo[(i, j)] = self.__dfs(grid, i, j + 1, memo) + \
+                        self.__dfs(grid, i + 1, j, memo)
+
+        # revert states
+
+        return memo[(i, j)]
 ```
 
 ### 复杂度分析
