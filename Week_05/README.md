@@ -58,7 +58,7 @@
 
 #### 中等
 
-* [] [最小路径和]() ([leetcode]())（亚马逊、高盛集团、谷歌在半年内面试中考过）
+* [x] [最小路径和](code/64-minimum-path-sum.md) ([leetcode](https://leetcode-cn.com/problems/minimum-path-sum/))（亚马逊、高盛集团、谷歌在半年内面试中考过）
 * [] [解码方法]() ([leetcode]())（亚马逊、Facebook、字节跳动在半年内面试中考过）
 * [] [最大正方形]() ([leetcode]())（华为、谷歌、字节跳动在半年内面试中考过）
 * [] [任务调度器]() ([leetcode]())（Facebook 在半年内面试中常考）
