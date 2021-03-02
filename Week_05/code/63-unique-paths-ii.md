@@ -33,7 +33,7 @@ n == obstacleGrid[i].length
 1 <= m, n <= 100
 obstacleGrid[i][j] 为 0 或 1
 ```
-## 方法 1: 使用动态规划
+## 方法 1: 使用动态规划: 自顶向下
 
 ### 思路
 
