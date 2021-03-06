@@ -2,6 +2,16 @@
 
 [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
 
+## 补充知识
+
+* 求 **最大子序列和** 在以下方面有实际的应用：
+    * **基因测序**
+    * **计算机视觉**，可以用于检测一张图片中最亮的那个区域。
+
+## 类似题目
+
+* [121. 买卖股票的最佳时机](code/) [leetcode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)
+
 ```
 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 
@@ -42,14 +52,17 @@
 
 ### 思路
 
+* 这是一个 **求最优解** 的问题，它通常可以用 **动态规划 DP** 来求解。
+* 要用 **DP**，第一件事就是要找出 **子问题的格式（或子问题的状态）**。
+    * 假设只有一个元素，则最大子序列和就是它本身；
+    * 再加一个元素，则最大子序列和就是，下面两者取最大值：
+        * 当前元素
+        * 上一子序列和与当前元素和
+    * 继续递推
+* dp[i]: 表示到 i 点，最大的连续子数组和，
 
-* 要找 「最大和的连续子数组 」
-* dp[i]: 到 i 点，最大的连续子数组和，那结果就是 `dp[size]`
-* `nums[i]` 有两种可能：
-    * 与前面的连在一起
-    * 或新开一个子数组 
 
-* 在国际站上看到这样一段话，
+* 参考
 
 > Apparently, this is a optimization problem, which can be usually solved by DP. So when it comes to DP, the first thing for us to figure out is the format of the sub problem(or the state of each sub problem). The format of the sub problem can be helpful when we are trying to come up with the recursive relation.
 
@@ -81,7 +94,37 @@ class Solution:
 * 空间复杂度：O(n)
 
 
-## 方法 2: 
+## 方法 2: 动态规划 - 压缩空间
+
+### 思路
+
+* 思路同方法 1，只是考虑到每次 dp 方程转移时只与前一个 **子序列和** 相关，所以可以略去使用一维数组
+
+
+```python
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+
+        dp = nums[0]
+        res = float('-inf')
+
+        for i in range(1, len(nums)):
+            dp = max(nums[i], dp + nums[i])
+            res = max(res, dp)
+
+        return res
+```
+
+### 复杂度分析
+
+* 时间复杂度：O(n)
+* 空间复杂度：O(1)
+
+
+
+## 方法 3: 抄自国际站
 
 ### 思路
 

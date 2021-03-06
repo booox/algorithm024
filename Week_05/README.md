@@ -23,7 +23,7 @@
 
 * [x] [爬楼梯](../1p1d/day00-climbing-stairs.md) ([leetcode](https://leetcode-cn.com/problems/climbing-stairs/description/)) （阿里巴巴、腾讯、字节跳动在半年内面试常考）
 * [x] [三角形最小路径和]() ([leetcode](https://leetcode-cn.com/problems/triangle/description/)) （亚马逊、苹果、字节跳动在半年内面试考过）
-* [] [最大子序和]() ([leetcode](https://leetcode-cn.com/problems/maximum-subarray/)) （亚马逊、字节跳动在半年内面试常考）
+* [x] [最大子序和](code/53-maximum-subarray.md) ([leetcode](https://leetcode-cn.com/problems/maximum-subarray/)) （亚马逊、字节跳动在半年内面试常考）
 * [] [乘积最大子数组]() ([leetcode](https://leetcode-cn.com/problems/maximum-product-subarray/description/)) （亚马逊、字节跳动、谷歌在半年内面试中考过）
 * [] [零钱兑换]() ([leetcode](https://leetcode-cn.com/problems/coin-change/description/)) （亚马逊在半年内面试中常考）
 * [] [三角形最小路径和高票回答](https://leetcode.com/problems/triangle/discuss/38735/Python-easy-to-understand-solutions-(top-down-bottom-up))
@@ -32,7 +32,7 @@
 
 * [] [打家劫舍]() ([leetcode]())（字节跳动、谷歌、亚马逊在半年内面试中考过）
 * [] [打家劫舍 II ]() ([leetcode]())（字节跳动在半年内面试中考过）
-* [] [买卖股票的最佳时机]() ([leetcode]())（亚马逊、字节跳动、Facebook 在半年内面试中常考）
+* [x] [买卖股票的最佳时机](code/121-best-time-to-buy-and-sell-stock.md) ([leetcode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/))（亚马逊、字节跳动、Facebook 在半年内面试中常考）
 * [] [买卖股票的最佳时机 II ]() ([leetcode]())（亚马逊、字节跳动、微软在半年内面试中考过）
 * [] [买卖股票的最佳时机 III ]() ([leetcode]())（字节跳动在半年内面试中考过）
 * [] [最佳买卖股票时机含冷冻期]() ([leetcode]())（谷歌、亚马逊在半年内面试中考过）
