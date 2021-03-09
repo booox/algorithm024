@@ -88,6 +88,22 @@ class Solution:
         return max(dp)
 ```
 
+**或直接在 nums 上修改**
+
+
+```python
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        if not nums:
+            return
+
+        for i in range(1, len(nums)):
+            nums[i] = max(nums[i], nums[i] + nums[i - 1])
+
+        return max(nums)
+```
+
+
 ### 复杂度分析
 
 * 时间复杂度：O(n)
@@ -145,6 +161,22 @@ class Solution:
                 nums[i] += nums[i - 1]
         
         return max(nums)
+```
+
+### 复杂度分析
+
+* 时间复杂度：O()
+* 空间复杂度：O()
+
+
+## 方法 : 
+
+### 思路
+
+* 
+
+```python
+
 ```
 
 ### 复杂度分析
