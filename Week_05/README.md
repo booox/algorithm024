@@ -30,8 +30,8 @@
 
 ### 打家劫舍
 
-* [x] [打家劫舍](code/198-house-robber.md) ([leetcode](https://leetcode-cn.com/problems/house-robber))（字节跳动、谷歌、亚马逊在半年内面试中考过）
-* [] [打家劫舍 II ]() ([leetcode]())（字节跳动在半年内面试中考过）
+* [x] [198. 打家劫舍](code/198-house-robber.md) ([leetcode](https://leetcode-cn.com/problems/house-robber))（字节跳动、谷歌、亚马逊在半年内面试中考过）
+* [x] [打家劫舍 II ](code/213-house-robber-ii.md) ([leetcode](https://leetcode-cn.com/problems/house-robber-ii/))（字节跳动在半年内面试中考过）
 * [x] [买卖股票的最佳时机](code/121-best-time-to-buy-and-sell-stock.md) ([leetcode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/))（亚马逊、字节跳动、Facebook 在半年内面试中常考）
 * [] [买卖股票的最佳时机 II ]() ([leetcode]())（亚马逊、字节跳动、微软在半年内面试中考过）
 * [] [买卖股票的最佳时机 III ]() ([leetcode]())（字节跳动在半年内面试中考过）
